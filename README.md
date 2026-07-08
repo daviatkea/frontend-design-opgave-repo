@@ -1,26 +1,20 @@
 # Frontend Design - Opgaver
 
 > [!IMPORTANT]  
-> Følg instruktionerne, før du kloner.
+> Brug **Use this template** og vælg **Include all branches**. Du skal ikke forke eller klone repoet.
 
-## Instruktioner
+## Kom i gang
 
-<details>
-<summary>1. Fork alle branches (fold ud for at se hvordan)</summary>
+1. Klik på **Use this template** øverst til højre.
+2. Vælg **Create a new repository**.
+3. Giv repoet et navn, fx `frontend-design-opgaver`.
+4. Vigtigt: Sæt flueben ved **Include all branches**.
+   ![Medtag alle branches](./resources/branches.png)
+5. Klon dit nye repository til din computer.
 
-![Fork repo](./fork.png)
+6. Forbind med Netlify og sørg for, at deployment sker fra alle branches (fold ud for at se mere)
 
-</details>
-
-2. Klon det forkede repository
-
-<details>
-
-<summary>3. Forbind med Netlify og sørg for, at deployment sker fra alle branches (fold ud for at se mere)</summary>
-
-![Deplyoyment from Netlify](./netlify.png)
-
-</details>
+   ![Deplyoyment from Netlify](./resources/netlify.png)
 
 Du er nu klar til at gå i gang med opgaverne. Når du skal lave en øvelse, så vælg denne ved at skifte til den relevante branch (se liste over øvelser nedenfor).
 
