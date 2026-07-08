@@ -24,17 +24,6 @@
 
 Du er nu klar til at gå i gang med opgaverne. Når du skal lave en øvelse, så vælg denne ved at skifte til den relevante branch (se liste over øvelser nedenfor).
 
-### Netlify-indstillinger
-
-Brug disse indstillinger som udgangspunkt:
-
-- Production branch: `main`
-- Branch deploys: alle branches
-- Build command: lad feltet være tomt
-- Publish directory: `.`
-
-De fleste øvelser er statiske HTML/CSS-projekter, og de kan derfor deployes direkte fra roden af branchen. Astro-øvelserne indeholder deres egen `netlify.toml`, som sætter `npm run build` og `dist` for de branches, der har brug for et build-step.
-
 En branch bliver typisk tilgængelig på en URL i dette format:
 
 ```txt
