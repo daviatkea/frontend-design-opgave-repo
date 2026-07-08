@@ -12,7 +12,7 @@
    ![Medtag alle branches](./resources/branches.png)
 5. Klon dit nye repository til din computer.
 
-6. Forbind med Netlify og sørg for, at deployment sker fra alle branches (fold ud for at se mere)
+6. Forbind projektet med Netlify (https://netlify.com) og sørg for, at deployment sker fra alle branches. Se nedenfor:
 
    ![Deplyoyment from Netlify](./resources/netlify.png)
 
