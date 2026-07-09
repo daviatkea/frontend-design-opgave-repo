@@ -39,6 +39,7 @@ branch-navn--site-navn.netlify.app
 - Subgrid Card ("subgrid-card")
 - Responsive Container ("responsive-container")
 - Responsive Album ("responsive-album")
+- Bento Grid ("bento-grid")
 
 ### UI Patterns
 
