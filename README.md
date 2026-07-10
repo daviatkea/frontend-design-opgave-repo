@@ -48,6 +48,16 @@ branch-navn--site-navn.netlify.app
 - Card UI ("card-ui")
 - Animated Accordion w/ details/summary ("details-accordion")
 
+### Moderne CSS og progressive enhancement
+
+- Relative Color Syntax ("relative-color")
+- Anchor Positioning ("anchor-positioning")
+- @supports og reel fallback ("supports-fallback")
+
+### CSS-arkitektur
+
+- CSS-arkitektur: ansvar før mapper ("css-architecture")
+
 ### Code in the Dark
 
 - Code in the Dark 1 ("citd-1")
