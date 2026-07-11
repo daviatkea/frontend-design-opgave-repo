@@ -19,9 +19,11 @@ Du skal arbejde med denne branch, som består af et HTML-dokument med kort (`car
 - tekstafsnit
 - og/eller billede
 
-Din opgave er at style kortene i `style.css` ved hjælp af **`:has()`** i kombination med `:not()`, så kortene reagerer på deres indhold.
+Din opgave er at:
 
-Målet er at undgå ekstra “klasser” i HTML, når informationen allerede findes i markup’en.
+1. Style kortene i `style.css` ved hjælp af **`:has()`** i kombination med `:not()`, så kortene reagerer på deres indhold. Målet er at undgå ekstra “klasser” i HTML.
+
+2. Skrive en kort refleksion over, hvorfor `:has()` er en god løsning i denne opgave fremfor ekstra klasser i HTML. Reflekter også over, hvordan det påvirker læsbarheden og vedligeholdelsen af koden. Skriv refleksionen i `REFLEKSION.md`.
 
 ## Krav til styling (se referencebillede)
 
@@ -72,8 +74,7 @@ Din løsning skal vise, at du kan:
 
 - bruge `:has()` til at style parent/komponent ud fra indhold
 - kombinere `:has()` med `:not()` når det giver mening
-- holde selectors læsbare
-- løse opgaven uden ændringer i HTML-strukturen
+- reflektere over, hvornår relationel styling er en god idé fremfor ekstra klasser i HTML
 
 ### Instruktioner
 
