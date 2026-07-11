@@ -61,7 +61,7 @@ branch-navn--site-navn.netlify.app
 ### Code in the Dark
 
 - Code in the Dark 1 ("citd-1")
-- Code in the Dark 2 ("citd-2")
+- Code in the Dark: Profile Card ("citd-2")
 
 ## Ressourcer
 
