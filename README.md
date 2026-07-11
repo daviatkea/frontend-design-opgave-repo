@@ -1,4 +1,4 @@
-# **Code in the Dark 2**
+# **Code in the Dark: Profile Card**
 
 ## Formål
 
