@@ -28,7 +28,7 @@ Du skal lave en løsning, hvor:
 3. For `h3`, sæt `—flow-space`-værdien til `1rlh`.
 4. For alle elementer, der kommer lige efter **`h3`**, reducér `—flow-space` til `.25rlh`.
 
-_Hvis du ikke har set `rlh` før, så kan du læse mere om det i kursusmaterialet [lh/rlh](https://demos.cssxs.dev/topic/3sem/crafting-ui/typography/line-height-lh-og-rlh-i-praksis#lh-og-rlh-kort-fortalt)_
+_Hvis du ikke har set `rlh` før, så kan du læse mere om det i kursusmaterialet [lh/rlh](https://demos.cssxs.dev/topic/3sem/crafting-ui/typography/units-i-praksis)_
 
 Din løsning skal vise en forståelse af flow space-teknikken og korrekt implementere de nødvendige CSS Custom Properties.
 
