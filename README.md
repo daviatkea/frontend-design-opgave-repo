@@ -47,10 +47,10 @@ branch-navn--site-navn.netlify.app
 - Styling af tekstindhold ("text-styling")
 - Card UI ("card-ui")
 - Animated Accordion w/ details/summary ("details-accordion")
+- Relative Color Syntax ("relative-color")
 
 ### Moderne CSS og progressive enhancement
 
-- Relative Color Syntax ("relative-color")
 - Anchor Positioning ("anchor-positioning")
 - @supports og reel fallback ("supports-fallback")
 
