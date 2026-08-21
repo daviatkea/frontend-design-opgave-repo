@@ -11,7 +11,7 @@ At bruge **Relative Color Syntax** til at aflede meningsfulde UI-states fra en e
 1. [MDN: Using relative colors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors)
 2. [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
 
-![Eksempel på en færdig action-card](card.png)
+![Eksempel på færdige action-cards](card.png)
 
 ## Opgavebeskrivelse
 
