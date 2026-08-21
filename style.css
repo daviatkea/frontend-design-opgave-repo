@@ -1,0 +1,144 @@
+:root {
+  color-scheme: light;
+  --color-text: #182033;
+  --color-surface: #ffffff;
+  --color-page: #f2f4f8;
+  --color-brand: #5546d8;
+
+  --space-xs: 0.5rem;
+  --space-s: 0.75rem;
+  --space-m: 1rem;
+  --space-l: 1.5rem;
+  --space-xl: 2.5rem;
+  --radius: 1rem;
+}
+
+body {
+  min-block-size: 100svb;
+  padding: clamp(1rem, 4vw, 4rem);
+  color: var(--color-text);
+  background: var(--color-page);
+  font-family: system-ui, sans-serif;
+}
+
+main {
+  inline-size: min(68rem, 100%);
+  margin-inline: auto;
+}
+
+.intro {
+  max-inline-size: 62ch;
+  margin-block-end: var(--space-xl);
+}
+
+.intro > * + * {
+  margin-block-start: var(--space-s);
+}
+
+.intro h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 0.95;
+}
+
+.eyebrow {
+  color: var(--color-brand);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 21rem), 1fr));
+  gap: var(--space-l);
+}
+
+.action-card {
+  /* TODO: Afled disse tokens fra --color-brand med Relative Color Syntax. */
+  --color-brand-hover: ;
+  --color-brand-active: ;
+  --color-brand-muted: ;
+  --color-brand-border: ;
+  --color-brand-focus: ;
+  --color-brand-on-muted: ;
+
+  padding: var(--space-xl);
+  border: 2px solid var(--color-brand-border);
+  border-radius: var(--radius);
+  background: var(--color-brand-muted);
+  box-shadow: 0 1rem 2.5rem rgb(24 32 51 / 0.08);
+}
+
+.action-card[data-theme="indigo"] {
+  --color-brand: #5546d8;
+}
+
+.action-card[data-theme="coral"] {
+  --color-brand: #c94f35;
+}
+
+.action-card > * + * {
+  margin-block-start: var(--space-m);
+}
+
+.action-card .eyebrow {
+  color: var(--color-brand-on-muted);
+}
+
+.action-card h2 {
+  font-size: 1.6rem;
+  line-height: 1.05;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+}
+
+.button {
+  display: inline-flex;
+  min-block-size: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding-inline: var(--space-m);
+  border: 2px solid var(--color-brand);
+  border-radius: 100vmax;
+  color: white;
+  background: var(--color-brand);
+  font: inherit;
+  font-weight: 750;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  border-color: var(--color-brand-hover);
+  background: var(--color-brand-hover);
+}
+
+.button:active {
+  border-color: var(--color-brand-active);
+  background: var(--color-brand-active);
+}
+
+.button:focus-visible {
+  /* Bevar synligt tastaturfokus, indtil brandets focus-token er afledt. */
+  outline: 3px solid var(--color-brand-focus, var(--color-text));
+  outline-offset: 3px;
+}
+
+.button--quiet {
+  color: var(--color-brand-on-muted);
+  background: transparent;
+}
+
+.button--quiet:hover {
+  color: white;
+}
+
+.button:disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+}
