@@ -5,6 +5,7 @@
   --color-page: #f2f4f8;
   --color-indigo: #5546d8;
   --color-coral: #c94f35;
+  --color-on-accent: #ffffff;
 
   --space-xs: 0.5rem;
   --space-s: 0.75rem;
@@ -105,12 +106,15 @@ main {
   padding-inline: var(--space-m);
   border: 2px solid var(--color-accent);
   border-radius: 100vmax;
-  color: white;
-  background: var(--color-accent);
   font: inherit;
   font-weight: 750;
   text-decoration: none;
   cursor: pointer;
+}
+
+.button[data-variant="solid"] {
+  color: var(--color-on-accent);
+  background: var(--color-accent);
 }
 
 .button:hover {
@@ -129,13 +133,13 @@ main {
   outline-offset: 3px;
 }
 
-.button--quiet {
+.button[data-variant="quiet"] {
   color: var(--color-accent-on-muted);
   background: transparent;
 }
 
-.button--quiet:hover {
-  color: white;
+.button[data-variant="quiet"]:is(:hover, :active) {
+  color: var(--color-on-accent);
 }
 
 .button:disabled {

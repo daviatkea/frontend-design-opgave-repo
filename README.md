@@ -17,6 +17,8 @@ At bruge **Relative Color Syntax** til at aflede meningsfulde UI-states fra en e
 
 Du får to action-komponenter med hvert sit `data-theme`. I `:root` ligger palettefarverne `--color-indigo` og `--color-coral`. Hvert tema peger på den relevante farve gennem komponentens lokale `--color-accent`, mens de afledte farvetokens står tomme på `.action-card`.
 
+Knapperne bruger `data-variant="solid"` og `data-variant="quiet"` til deres visuelle varianter. Tekst oven på en fyldt accentflade bruger det selvstændige token `--color-on-accent`.
+
 Billedet ovenfor viser retningen for den færdige komponent. Når du udfylder de fælles farvetokens, skal begge kort automatisk få et sammenhængende farvesystem.
 
 Arbejd i `style.css` og løs TODO-markeringerne.
@@ -30,7 +32,8 @@ Arbejd i `style.css` og løs TODO-markeringerne.
    - `--color-accent-on-muted`
 2. Placér den fælles state-logik på `.action-card`, så begge komponenter reagerer på deres egen `--color-accent`.
 3. Behold som udgangspunkt accentfarvens hue, og justér primært lightness og chroma.
-4. Kontrollér kontrast for tekst, knapper og fokusmarkering.
+4. Behold `--color-on-accent` som et selvstændigt token. Det er en bevidst kontrastbeslutning og skal ikke afledes matematisk fra accentfarven.
+5. Kontrollér kontrast for tekst, knapper og fokusmarkering.
 
 ## En enkel tilgang
 
@@ -51,12 +54,14 @@ Når du sammenligner to accentfarver, er det lettest at vælge forskellige hues 
 
 Målet er ikke at gøre alle farver matematisk relative. Neutrale farver og semantisk særskilte farver må fortsat være selvstændige tokens.
 
+`--color-on-accent` er et eksempel: hvid er valgt bevidst til tekst på de fyldte accentfarver. Hvis palettefarverne ændres markant, skal kontrasten kontrolleres igen, og tokenet kan få brug for en anden værdi.
+
 ## Defensive tests
 
 - Skift `--color-coral` til en anden hue med nogenlunde samme lightness.
 - Test hover, active, keyboard focus og disabled.
 - Kontrollér, at du kun behøver at ændre palettefarven i `:root` for at opdatere hele komponenten.
-- Kontrollér kontrasten for hvid tekst på den fyldte knap, `on-muted`-tekst og focus-ring.
+- Kontrollér kontrasten for `--color-on-accent` på den fyldte knap, `on-muted`-tekst og focus-ring.
 
 ## Specifikke mål
 
