@@ -3,7 +3,8 @@
   --color-text: #182033;
   --color-surface: #ffffff;
   --color-page: #f2f4f8;
-  --color-brand: #5546d8;
+  --color-indigo: #5546d8;
+  --color-coral: #c94f35;
 
   --space-xs: 0.5rem;
   --space-s: 0.75rem;
@@ -41,7 +42,7 @@ main {
 }
 
 .eyebrow {
-  color: var(--color-brand);
+  color: var(--color-indigo);
   font-size: 0.78rem;
   font-weight: 750;
   letter-spacing: 0.08em;
@@ -55,27 +56,29 @@ main {
 }
 
 .action-card {
-  /* TODO: Afled disse tokens fra --color-brand med Relative Color Syntax. */
-  --color-brand-hover: ;
-  --color-brand-active: ;
-  --color-brand-muted: ;
-  --color-brand-border: ;
-  --color-brand-focus: ;
-  --color-brand-on-muted: ;
+  --color-accent: ;
+
+  /* TODO: Afled disse tokens fra --color-accent med Relative Color Syntax. */
+  --color-accent-hover: ;
+  --color-accent-active: ;
+  --color-accent-muted: ;
+  --color-accent-border: ;
+  --color-accent-focus: ;
+  --color-accent-on-muted: ;
 
   padding: var(--space-xl);
-  border: 2px solid var(--color-brand-border);
+  border: 2px solid var(--color-accent-border);
   border-radius: var(--radius);
-  background: var(--color-brand-muted);
+  background: var(--color-accent-muted);
   box-shadow: 0 1rem 2.5rem rgb(24 32 51 / 0.08);
 }
 
 .action-card[data-theme="indigo"] {
-  --color-brand: #5546d8;
+  --color-accent: var(--color-indigo);
 }
 
 .action-card[data-theme="coral"] {
-  --color-brand: #c94f35;
+  --color-accent: var(--color-coral);
 }
 
 .action-card > * + * {
@@ -83,7 +86,7 @@ main {
 }
 
 .action-card .eyebrow {
-  color: var(--color-brand-on-muted);
+  color: var(--color-accent-on-muted);
 }
 
 .action-card h2 {
@@ -103,10 +106,10 @@ main {
   align-items: center;
   justify-content: center;
   padding-inline: var(--space-m);
-  border: 2px solid var(--color-brand);
+  border: 2px solid var(--color-accent);
   border-radius: 100vmax;
   color: white;
-  background: var(--color-brand);
+  background: var(--color-accent);
   font: inherit;
   font-weight: 750;
   text-decoration: none;
@@ -114,23 +117,23 @@ main {
 }
 
 .button:hover {
-  border-color: var(--color-brand-hover);
-  background: var(--color-brand-hover);
+  border-color: var(--color-accent-hover);
+  background: var(--color-accent-hover);
 }
 
 .button:active {
-  border-color: var(--color-brand-active);
-  background: var(--color-brand-active);
+  border-color: var(--color-accent-active);
+  background: var(--color-accent-active);
 }
 
 .button:focus-visible {
-  /* Bevar synligt tastaturfokus, indtil brandets focus-token er afledt. */
-  outline: 3px solid var(--color-brand-focus, var(--color-text));
+  /* Bevar synligt tastaturfokus, indtil accentens focus-token er afledt. */
+  outline: 3px solid var(--color-accent-focus, var(--color-text));
   outline-offset: 3px;
 }
 
 .button--quiet {
-  color: var(--color-brand-on-muted);
+  color: var(--color-accent-on-muted);
   background: transparent;
 }
 
