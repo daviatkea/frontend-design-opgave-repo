@@ -56,7 +56,12 @@ main {
 }
 
 .action-card {
-  --color-accent: ;
+  &[data-theme="indigo"] {
+    --color-accent: var(--color-indigo);
+  }
+  &[data-theme="coral"] {
+    --color-accent: var(--color-coral);
+  }
 
   /* TODO: Afled disse tokens fra --color-accent med Relative Color Syntax. */
   --color-accent-hover: ;
@@ -71,14 +76,6 @@ main {
   border-radius: var(--radius);
   background: var(--color-accent-muted);
   box-shadow: 0 1rem 2.5rem rgb(24 32 51 / 0.08);
-}
-
-.action-card[data-theme="indigo"] {
-  --color-accent: var(--color-indigo);
-}
-
-.action-card[data-theme="coral"] {
-  --color-accent: var(--color-coral);
 }
 
 .action-card > * + * {
