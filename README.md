@@ -49,6 +49,10 @@ branch-navn--site-navn.netlify.app
 - Animated Accordion w/ details/summary ("details-accordion")
 - Relative Color Syntax ("relative-color")
 
+### Grafik
+
+- Doughnut Chart ("doughnut-chart")
+
 ### Moderne CSS og progressive enhancement
 
 - Anchor Positioning ("anchor-positioning")
